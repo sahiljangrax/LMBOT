@@ -13,8 +13,8 @@ def is_enabled(value, default):
 #---------------------------------------------------------------
 #---------------------------------------------------------------         ,
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '22069132'))
-API_HASH = environ.get('API_HASH', 'c41478a79cddbd9eb7c719e42653c8b0')
+API_ID = int(environ.get('API_ID', '21808158'))
+API_HASH = environ.get('API_HASH', 'fcfb27ddbdb238a0a180826059ab6cd2')
 BOT_TOKEN = environ.get('BOT_TOKEN', '7619116820:AAFjhYLNkeZcUOHwnVTcxIpN81ZSXCajxjM')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
@@ -25,7 +25,7 @@ MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/+6wr26bL5E2xkMm
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002377866578 -1002474788204 -1002015186954 -1002201780176 -1002332950268').split()]
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://LMRoBot:Sahilxbhai@cluster0.n9xmo.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://LMBot:Sahilxbhai@cluster0.kxnvn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 #---------------------------------------------------------------
@@ -41,7 +41,7 @@ MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002031790465')
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/LMOWNERBOT') #Support group link ( make sure bot is admin )
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-IS_VERIFY = is_enabled('IS_VERIFY', True)
+IS_VERIFY = is_enabled('IS_VERIFY', False)
 #---------------------------------------------------------------
 TUTORIAL = environ.get("TUTORIAL", "https://youtu.be/fFDmP6e5gzA")
 TUTORIAL_2 = environ.get("TUTORIAL_2", "https://youtu.be/fFDmP6e5gzA")
@@ -107,7 +107,7 @@ if 'DYNO' in environ:
     ON_HEROKU = True
 else:
     ON_HEROKU = False
-URL = environ.get("FQDN", "https://sporting-andee-autofilterclonebot-5fb1d53d.koyeb.app/")
+URL = environ.get("FQDN", "https://heavy-thrush-lonely-movies-s-7170d347.koyeb.app/")
 
 #---------------------------------------------------------------
 #---------------------------------------------------------------
